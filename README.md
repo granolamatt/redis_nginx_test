@@ -6,7 +6,9 @@ and python-redis for the client and redis-server and start the server
 
 Then, cd into the repo directory and run ./start_server.sh
 
-Connect the the websocket server at ws://localhost:9000/foo/blah/events
+Connect the the websocket server at ws://localhost:9000/stream/teststream/events
+or ws://localhost:9000/stream/events or ws://localhost:9000/stream/teststream/now/events
+
 I used https://websocket.org/echo.html for testing
 
 Finally run pub.py to pub an event to the redis server.
